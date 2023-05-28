@@ -14,9 +14,10 @@ export default function User() {
   }, []);
 
   return (
-    <div className="flex gap-3 w-full h-auto justify-center col-span-4 min-h-min  flex-wrap ps-10 p-2 ">
+    
+    <div className="flex flex-wrap items-center justify-between gap-x-4 px-16">
       {user.map((data) => (
-        <div key={data.key}>
+        <div key={data.key} className="my-4 w-72">
           <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <div class="flex justify-end px-4 pt-4">
               <button
